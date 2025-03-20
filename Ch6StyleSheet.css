@@ -1,0 +1,51 @@
+h1{
+    color:red;
+    font-weight:bold;
+}
+
+.table{
+    max-width:400px;
+    padding: 30px;
+    background:yellow;
+    border-color:aquamarine;
+    border-radius:10px;
+    margin: 0 auto;
+    box-shadow: 0 5px 8px 5px rgba(0,0,0,0.4);
+}
+
+label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:700px;
+}
+
+input[type="number"]{
+    width:100%;
+    margin-bottom:20px;
+    border: 2px solid white;
+    border-radius:10px;
+    padding:12px;
+    font-size:16px;
+}
+
+input[type="number"]:focus{
+    border-color:purple;
+    outline:10px;
+    box-shadow: 0 0 10px darkorchid;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background-color:green;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:background-color 0.2s ease;
+}
+
+button:hover{
+    background-color:lime;
+}
