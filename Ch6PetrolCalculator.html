@@ -7,16 +7,16 @@
 </head>
 <body>
     <center><h1>Petrol Calculator</h1></center>
-    <div class="table">
-        <label for="costPerLiter">Cost of Petrol Per Liter:</label>
-        <input type="number" id="costPerLiter" value="1.72" step="0.01">
-
+    <div class="table"><!--Calling the CSS class called table-->
+        <label for="costPerLiter">Cost of Petrol Per Liter:</label><!--Labelling the field for cost per liter-->
+        <input type="number" id="costPerLiter" value="1.72" step="0.01"><!--Adding the input field, step means how many numbers it goes up or down by-->
+        <!--The called ID is from the javascript internal found later on in the code-->
         <label for="purchasedLiters">Amount Purchased:</label>
         <input type="number" id="purchasedLiters" value="0" step="0.01">
 
-        <button onclick="calculateCost()">Calculate the Total Cost</button>
+        <button onclick="calculateCost()">Calculate the Total Cost</button><!--Calls the javascript function to run when button is clicked-->
 
-        <p id="totalCost">Total Cost: $0.00</p>
+        <p id="totalCost">Total Cost: $0.00</p><!--Default number shown, calls ID for total cost to run the results-->
     </div>
 
     <script>
@@ -29,5 +29,9 @@
             document.getElementById("totalCost").textContent= `Total Cost: $${totalCost.toFixed(2)}`;
         }
     </script>
+    <!--Custom function called calculateCost that houses constant variables named costPerLiter and purchasedLiters-->
+    <!--getElementId means to grab the number given in the html field and shows as a numerical value-->
+    <!--constant variable totalCost houses the result between multiplying the liter cost and number of liters purchased-->
+    <!--textContent is called to display the result via the p tag earlier in the code-->
 </body>
 </html>
